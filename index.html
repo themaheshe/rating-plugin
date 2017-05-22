@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ <title>rating plugin</title>
+ <link rel="stylesheet" type="text/css"  href="rating.css"/>
+ <!--https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min. -->
+ <link   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+  
+ 
+ <script  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+
+			  <script src="rating.js"></script>
+  </head> 
+  <body>
+  <p>This is rating plugin</p> 
+      
+      <input type="text" value="3" id="ratingme" name="ratingme"/><br/>
+<a href="#">Click to see that selected value of rating.</a>
+      <script>
+      $(function(){
+      	 $('#ratingme').rating();
+      	 
+      	 $( "a" ).click(function(){
+         	alert($('#ratingme').val());
+         });      	 
+      });
+      </script>
+  </body> 
+
+  </html> 
